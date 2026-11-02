@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#245a46"><meta name="description" content="أثَر، استوديو عربي لشهادات الشكر والتقدير. اختر قالبك، أضف أسماء طلابك، واحتفل بإنجازاتهم بشهادات جميلة جاهزة للطباعة.">
+  <title>أثَر — لكل إنجاز، شهادة تليق به</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/tajawal-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/tajawal-bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a href="#templates" class="brand" aria-label="أثَر — الرئيسية"><span class="brand-mark" data-icon="sparkles"></span><span class="wordmark">أثَر<span>نحتفي بالإنجاز</span></span></a>
+      <button class="button primary new-button" data-action="new"><span data-icon="plus"></span>إنشاء شهادة جديدة</button>
+      
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <button class="nav-item active" data-view="templates"><span data-icon="grid"></span>مكتبة القوالب<span class="nav-number">18</span></button>
+        <button class="nav-item" data-view="saved"><span data-icon="folder"></span>شهاداتي<span id="saved-count" class="nav-number">0</span></button>
+        <button class="nav-item" data-view="favorites"><span data-icon="heart"></span>المفضلة<span id="favorite-count" class="nav-number">0</span></button>
+        <button class="nav-item" data-action="bulk"><span data-icon="users"></span>شهادات بالجملة</button>
+      </nav>
+      <div class="sidebar-divider"></div><div class="nav-label">لكل مناسبة</div>
+      <nav class="occasion-nav" aria-label="أنواع الشهادات">
+        <button data-category="شكر وتقدير"><span class="category-dot gold"></span>شكر وتقدير</button>
+        <button data-category="تفوق دراسي"><span class="category-dot green"></span>تفوق دراسي</button>
+        <button data-category="مشاركة"><span class="category-dot violet"></span>مشاركة وإنجاز</button>
+        <button data-category="سلوك متميز"><span class="category-dot orange"></span>سلوك متميز</button>
+        <button data-category="حفظ القرآن"><span class="category-dot blue"></span>حفظ القرآن الكريم</button>
+      </nav>
+      <div class="sidebar-bottom">
+        
+        <button class="help-button" data-action="help"><span data-icon="help"></span>كيف أستخدم أثَر؟<span data-icon="arrow-left"></span></button>
+        <div class="profile"><span class="avatar" data-icon="graduation"></span><div><strong>مساحة المعلّم</strong><small>صُنعت لتقدير كل مجهود</small></div><span class="online-dot"></span></div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" data-action="menu" aria-label="فتح القائمة" aria-controls="sidebar" aria-expanded="false"><span data-icon="menu"></span></button><span class="mobile-wordmark">أثَر</span><span id="breadcrumb-current" hidden>مكتبة القوالب</span></div></header>
+      <div class="page-content">
+        <section class="hero" id="hero">
+          <div class="hero-copy"><h1>لكل إنجاز،<br> شهادة <span>تليق به.</span><svg viewBox="0 0 230 12" aria-hidden="true"><path d="M4 8 Q110 -2 226 6"/></svg></h1><p>صمّم شهادة تترك أثرًا، في دقائق.</p><div class="hero-actions"><button class="button primary" data-action="new">صمّم شهادتك الآن<span data-icon="arrow-left"></span></button><button class="button text-button" data-action="bulk"><span data-icon="users"></span>لفصلك كاملًا</button></div><div class="hero-footnote"><span data-icon="check-circle"></span>مجانية، وبدون علامة مائية</div></div>
+          <div class="hero-art" aria-label="نماذج من شهادات أثَر"><span class="hero-star star-one">✦</span><span class="hero-star star-two">✧</span><div class="hero-orbit"></div><div id="hero-back" class="hero-certificate back"></div><div id="hero-front" class="hero-certificate front"></div><div class="hero-float"><span class="float-icon" data-icon="award"></span><div><strong>إنجاز يستحق الاحتفاء</strong></div><span class="float-spark">✦</span></div></div>
+        </section>
+        <div class="benefits" id="benefits"><div><span data-icon="layers"></span><p><strong>١٨ قالبًا متنوعًا</strong></p></div><div><span data-icon="sliders"></span><p><strong>تخصيص بلمستك</strong></p></div><div><span data-icon="download"></span><p><strong>تنزيل وطباعة</strong></p></div></div>
+        <section class="library" id="library" aria-labelledby="library-title">
+          <div class="section-heading"><div><div id="section-kicker" hidden></div><h2 id="library-title">اختر قالبك<span class="heading-dot">.</span></h2><p id="library-description" hidden></p></div><label class="search-field"><span data-icon="search"></span><input type="search" id="search" placeholder="ابحث عن قالب..." aria-label="البحث في القوالب"><kbd>⌕</kbd></label></div>
+          <div class="filter-row"><div class="category-tabs" id="category-tabs" role="group" aria-label="تصفية حسب المناسبة"><button class="active" data-filter="الكل">كل القوالب <span>18</span></button><button data-filter="شكر وتقدير">شكر وتقدير</button><button data-filter="تفوق دراسي">تفوق دراسي</button><button data-filter="مشاركة">مشاركة</button><button data-filter="سلوك متميز">سلوك متميز</button><button data-filter="حفظ القرآن">حفظ القرآن</button></div><label class="sort-field"><span data-icon="sort"></span><select id="sort" aria-label="ترتيب القوالب"><option value="curated">اختيارات أثَر</option><option value="name">الاسم: أ — ي</option><option value="new">الأحدث أولًا</option></select></label></div>
+          <div class="results-line"><span id="result-count"></span><button id="resume-draft" class="inline-button" data-action="resume" hidden>متابعة آخر مسودة</button><button id="clear-filters" class="inline-button" hidden>مسح التصفية <span data-icon="x"></span></button></div>
+          <div id="template-grid" class="template-grid"></div>
+          <div id="empty-state" class="empty-state" hidden></div>
+        </section>
+        <section class="bulk-banner" id="bulk-banner"><div class="bulk-art" data-icon="users"></div><div><h3>شهادات الفصل، بضغطة واحدة.</h3></div><button class="button secondary" data-action="bulk">أنشئ شهادات بالجملة<span data-icon="arrow-left"></span></button></section>
+        <footer class="page-footer"><span class="footer-logo">أثَر<span>لكل مجهود، تقدير.</span></span><button class="inline-button" data-action="privacy">عن حفظ بياناتك<span data-icon="shield"></span></button></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="editor-dialog" class="editor-dialog" aria-labelledby="editor-title">
+    <header class="editor-header"><div class="editor-heading"><button class="icon-button" data-action="close-editor" aria-label="العودة إلى القوالب"><span data-icon="arrow-right"></span></button><div><h2 id="editor-title">شهادتك، بلمستك</h2><small id="save-status">يُحفظ التعديل تلقائيًا على هذا الجهاز</small></div></div><div class="editor-header-actions"><button class="icon-button" id="undo-button" data-action="undo" aria-label="تراجع" title="تراجع"><span data-icon="undo"></span></button><button class="icon-button" id="redo-button" data-action="redo" aria-label="إعادة" title="إعادة"><span data-icon="redo"></span></button><span class="header-divider"></span><button class="button secondary compact" data-action="save" aria-label="حفظ في شهاداتي"><span data-icon="folder"></span><span>حفظ في شهاداتي</span></button><button class="button primary compact" data-action="export"><span data-icon="download"></span>تنزيل الشهادة</button></div></header>
+    <div class="editor-layout"><aside class="editor-controls"><div class="editor-tabs" role="tablist"><button role="tab" aria-selected="true" data-editor-tab="content"><span data-icon="type"></span>المحتوى</button><button role="tab" aria-selected="false" data-editor-tab="design"><span data-icon="palette"></span>المظهر</button><button role="tab" aria-selected="false" data-editor-tab="students"><span data-icon="users"></span>الطلاب</button></div><div id="editor-fields" class="editor-fields"></div></aside><section class="editor-workspace"><div class="canvas-toolbar"><span class="live-badge"><i></i>معاينة مباشرة</span><span id="template-name"></span><span class="paper-label">A4 <span>أفقي</span></span></div><div class="certificate-stage"><div id="certificate-preview" class="certificate-preview"></div></div><div class="preview-navigation"><button class="icon-button" data-action="prev-student" aria-label="الطالب السابق"><span data-icon="chevron-right"></span></button><span id="preview-student-count">شهادة واحدة، أثر جميل</span><button class="icon-button" data-action="next-student" aria-label="الطالب التالي"><span data-icon="chevron-left"></span></button><button class="preview-print" data-action="print"><span data-icon="printer"></span>طباعة</button></div><div class="template-switch-heading"><span>جرّب إطلالة أخرى</span><small>محتوى شهادتك يبقى كما هو</small></div><div id="template-switcher" class="template-switcher"></div><div class="workspace-note"><span data-icon="sparkles"></span>لمسة تقدير صغيرة، تصنع فرقًا كبيرًا.</div></section></div>
+  </dialog>
+  <dialog id="export-dialog" class="small-dialog" aria-labelledby="export-title"><div class="modal-top"><span class="modal-symbol" data-icon="download"></span><button class="icon-button" data-close="export-dialog" aria-label="إغلاق"><span data-icon="x"></span></button></div><h2 id="export-title">جاهزة لتصنع فرحة</h2><p class="modal-description">اختر الصيغة المناسبة، ودع التقدير يصل.</p><form id="export-form"><label class="field-label">صيغة الملف</label><div class="format-options"><label><input type="radio" name="format" value="pdf" checked><span data-icon="file"></span><strong>PDF</strong><small>مثالي للطباعة</small></label><label><input type="radio" name="format" value="png"><span data-icon="image"></span><strong>PNG</strong><small>للمشاركة كصورة</small></label><label><input type="radio" name="format" value="svg"><span data-icon="sparkles"></span><strong>SVG</strong><small>وضوح بأي حجم</small></label></div><label class="field-label" for="export-scope">الشهادات المراد تنزيلها</label><select id="export-scope"><option value="current">الشهادة الظاهرة فقط</option><option value="all">جميع أسماء الطلاب</option></select><label class="field-label" for="export-quality">جودة الصور داخل الملف</label><select id="export-quality"><option value="2">عالية — مناسبة للمشاركة والطباعة</option><option value="3">فائقة — ملف أكبر وتفاصيل أكثر</option></select><p class="export-note"><span data-icon="check-circle"></span>بدون علامة مائية · مقاس A4 أفقي<br><span id="export-note">ملف PDF واحد جاهز للطباعة.</span></p><button type="submit" id="export-submit" class="button primary full"><span data-icon="download"></span>تنزيل الآن</button><div id="export-progress" role="status" class="export-progress" hidden></div></form></dialog>
+  <dialog id="info-dialog" class="small-dialog" aria-labelledby="info-title"><div class="modal-top"><span class="modal-symbol" data-icon="sparkles"></span><button class="icon-button" data-close="info-dialog" aria-label="إغلاق"><span data-icon="x"></span></button></div><div id="info-content"></div><button class="button primary full" data-close="info-dialog">جميل، لنبدأ</button></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div><div id="print-root"></div>
+  <script src="certificates.js"></script><script src="app.js"></script>
+</body></html>
